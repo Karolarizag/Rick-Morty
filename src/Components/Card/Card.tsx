@@ -1,7 +1,7 @@
 export const Card = ({props}:any) => {
 
   return (
-    <div className="card w-96 bg-secondary shadow-xl m-10">
+    <div className="card w-80 bg-secondary shadow-xl m-3 mx-2">
       <figure><img src={props.image} alt={props.name} /></figure>
       <div className="card-body">
         <h2 className="card-title">

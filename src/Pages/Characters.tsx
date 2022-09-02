@@ -3,23 +3,28 @@ import { useQuery } from '@apollo/client';
 import { Character } from '../types';
 import { Card } from '../Components/Card/Card';
 import { Loading } from '../Components/Loading/Loading';
-
+import { Title } from '../Components/Title/Title';
+import { Navbar } from '../Components/Navbar/Navbar';
 export const Characters = () => {
   const characters = useQuery(CHARACTERS).data?.characters?.results
   const isLoading = useQuery(CHARACTERS).loading
 
   return (
     <div>
+
+      <Navbar />
+      <Title props={'Characters'} />
+
       {
         isLoading
         ? <Loading />
         : 
-        <div className="flex flex-wrap justify-around">
+        <div className="flex flex-wrap justify-around p-5">
           {
             characters?.map((item:Character) => {
               return (
-                <div>
-                  <Card props={item} key={item.id} />
+                <div key={item.id}>
+                  <Card props={item} />
                 </div>
               )
             })

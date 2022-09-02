@@ -1,5 +1,13 @@
+import { Navbar } from "../Components/Navbar/Navbar"
+import { Title } from "../Components/Title/Title"
+
 export const Locations = () => {
   return (
-    <div>locations</div>
+    <div>
+
+    <Navbar />
+    <Title props={'Locations'} />
+
+    </div>
   )
 }

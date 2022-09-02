@@ -11,15 +11,15 @@ export const Home = () => {
         <div className="card glass p-5 max-w-md">
           <h1 className="mb-5 text-5xl font-bold">Rick & Morty app</h1>
           <p className="mb-5 ">Find the characters and locations and get more information about this show!</p>
-          <div className='flex justify-around'>
+          <div className='md-flex-1'>
             <Link to='/characters'>
-              <button className="btn btn-primary">Characters</button>
+              <button className="btn btn-primary m-1">Characters</button>
             </Link>
             <Link to='/locations'>
-              <button className="btn btn-primary">Locations</button>
+              <button className="btn btn-primary m-1">Locations</button>
             </Link>
             <Link to='/madewith'>
-              <button className="btn btn-primary">Made with</button>
+              <button className="btn btn-primary m-1">Made with</button>
             </Link>
           </div>
         </div>
