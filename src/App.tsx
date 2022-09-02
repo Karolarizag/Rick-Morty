@@ -1,46 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import { gql } from '@apollo/client'
+import { CHARACTERS } from './Services/Characters'
+import { useQuery } from '@apollo/client';
 import './App.css';
-
-const CHARACTERS = gql`{
-  characters {
-    results {
-      id
-      name
-      status
-      species
-      image
-      location {
-        name
-        id
-      }
-      gender
-      origin {
-        name
-        id
-      }
-      type
-      episode {
-        name
-        id
-      } 
-    }
-  }
-}
-`
+import { Character } from './types';
 
 function App() {
 
-  console.log(CHARACTERS, '-------')
+  const characters = useQuery(CHARACTERS).data?.characters
+
+  console.log(characters)
 
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </header>
+
+    {
+      characters?.results?.map((item:Character) => {
+        return (
+          <div className="card w-96 bg-base-100 shadow-xl">
+            <figure className="px-10 pt-10">
+              <img src={item.image} alt={item.name} className="rounded-xl" />
+            </figure>
+            <div className="card-body items-center text-center">
+              <h2 className="card-title"> {item.name}</h2>
+              <p>{item.status} - {item.species}</p>
+              <p>{item.location.name}</p>
+            </div>
+          </div>
+        )
+      })
+    }
+
     </div>
   );
 }
