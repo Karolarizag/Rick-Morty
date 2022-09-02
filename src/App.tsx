@@ -3,32 +3,26 @@ import { CHARACTERS } from './Services/Characters'
 import { useQuery } from '@apollo/client';
 import './App.css';
 import { Character } from './types';
+import { Card } from './Components/Card/Card';
 
 function App() {
 
-  const characters = useQuery(CHARACTERS).data?.characters
-
-  console.log(characters)
+  const characters = useQuery(CHARACTERS).data?.characters?.results
 
   return (
-    <div className="App">
+    <div className="bg-default">
 
-    {
-      characters?.results?.map((item:Character) => {
-        return (
-          <div className="card w-96 bg-base-100 shadow-xl">
-            <figure className="px-10 pt-10">
-              <img src={item.image} alt={item.name} className="rounded-xl" />
-            </figure>
-            <div className="card-body items-center text-center">
-              <h2 className="card-title"> {item.name}</h2>
-              <p>{item.status} - {item.species}</p>
-              <p>{item.location.name}</p>
-            </div>
-          </div>
-        )
-      })
-    }
+      <div className="flex flex-wrap justify-around">
+        {
+          characters?.map((item:Character) => {
+            return (
+              <div>
+                <Card props={item} key={item.id} />
+              </div>
+            )
+          })
+        }
+    </div>
 
     </div>
   );
