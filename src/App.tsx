@@ -1,28 +1,25 @@
 import React from 'react';
-import { CHARACTERS } from './Services/Characters'
-import { useQuery } from '@apollo/client';
+import { Home } from './Pages/Home'
+import { Routes, Route } from 'react-router-dom'
 import './App.css';
-import { Character } from './types';
-import { Card } from './Components/Card/Card';
+import { Characters } from './Pages/Characters';
+import { Locations } from './Pages/Locations';
+import { MadeWith } from './Pages/MadeWith';
+import { Loading } from './Components/Loading/Loading';
 
 function App() {
 
-  const characters = useQuery(CHARACTERS).data?.characters?.results
 
   return (
     <div className="bg-default">
 
-      <div className="flex flex-wrap justify-around">
-        {
-          characters?.map((item:Character) => {
-            return (
-              <div>
-                <Card props={item} key={item.id} />
-              </div>
-            )
-          })
-        }
-    </div>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path='/characters' element={<Characters />} />
+        <Route path='/locations' element={<Locations />} />
+        <Route path='/madewith' element={<MadeWith />} />
+        <Route path='/loading' element={<Loading />} />
+      </Routes>
 
     </div>
   );
