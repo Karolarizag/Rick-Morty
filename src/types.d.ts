@@ -12,6 +12,12 @@ export type Character = {
 } 
 
 export type Location = {
-  name: string, 
-  code: string
+  name: string
+  id: strin
+  type: string
+  dimesion: string
+  residents: {
+    id: string
+    name: string
+  }
 }
