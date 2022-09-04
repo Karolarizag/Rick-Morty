@@ -21,3 +21,8 @@ export type Location = {
     name: string
   }
 }
+
+export type Episode = {
+  name: string
+  id: string
+}
