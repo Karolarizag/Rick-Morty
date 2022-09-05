@@ -52,38 +52,44 @@ export const CharacterDetail = () => {
 
           <div className="flex flex-wrap justify-center my-10">
             <img className="rounded-lg mx-5" src={character.image} alt={character.name} />
-            <div>
+            {/* <div>
 
               {
                 character.gender === 'Male'
                 ? <div className="badge badge-secondary">{character.gender}</div>
                 : <div className="badge badge-primary">{character.gender}</div>
               }
-              
+              <br />
               {
                 character.status === 'Alive'
                 ? <div className="badge badge-primary">{character.status}</div>
                 : <div className="badge badge-secondary">{character.status}</div>
               }
+              <br />
               
-            </div>
+            </div> */}
             
             
-            {/* <table className="table ">
-              <thead>
-                <tr>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </thead>
+            <table className="table ">
 
               <tbody>
                 <tr>
                   <td>Gender</td>
-                  <td>{character.gender}</td>
+                  <td>
+                    {
+                      character.gender === 'Male'
+                      ? <div className="badge badge-secondary">{character.gender}</div>
+                      : <div className="badge badge-primary">{character.gender}</div>
+                    }
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td>Type</td>
+                  <td>{character.type}</td>
                 </tr>
 
-                <tr className="active">
+                <tr>
                   <td>Location</td>
                   <td>{character.location.name}</td>
                 </tr>
@@ -94,17 +100,12 @@ export const CharacterDetail = () => {
                 </tr>
                 
                 <tr>
-                  <td>Type</td>
-                  <td>{character.type}</td>
-                </tr>
-                
-                <tr>
                   <td>Species</td>
                   <td>{character.species}</td>
                 </tr>
                 
               </tbody>
-            </table> */}
+            </table>
           </div>
         
         </div>
