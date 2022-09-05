@@ -1,5 +1,4 @@
 import { Character } from "../../types"
-import './CharactersCard.css'
 
 export const Card = ({props}:any) => {
 
