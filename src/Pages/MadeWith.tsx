@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import { Navbar } from "../Components/Navbar/Navbar"
 import { Title } from "../Components/Title/Title"
 import { Techonlogy } from "../types"
