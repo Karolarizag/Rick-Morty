@@ -43,6 +43,8 @@ export const Card = ({props}:any) => {
 
           <p>First seen in: <br /> {props.origin.name} </p>
 
+          <div className=" badge badge-warning">Episodes: {props.episode.length + 1}</div>
+
         </div>
 
       </div>

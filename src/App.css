@@ -4,4 +4,5 @@
 
 .banner {
   background-image: url('../assets/wallpaper.jpg');
+  background-position: 70% !important;
 }

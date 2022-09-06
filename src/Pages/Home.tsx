@@ -10,7 +10,6 @@ export const Home = () => {
       <div className="hero-content text-center text-neutral-content">
         <div className="card glass p-5 max-w-md">
           <h1 className="mb-5 text-5xl font-bold">Rick & Morty app</h1>
-          <p className="mb-5 ">Find the characters and locations and get more information about this show!</p>
           <div className='md-flex-1'>
             <Link to='/characters'>
               <button className="btn btn-primary m-1">Characters</button>

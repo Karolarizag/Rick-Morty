@@ -28,6 +28,7 @@ export type Episode = {
 }
 
 export type Techonlogy = {
+  id: number
   name: string 
   image: string 
   link: string

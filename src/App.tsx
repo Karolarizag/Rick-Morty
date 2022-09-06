@@ -6,7 +6,6 @@ import { Characters } from './Pages/Characters';
 import { Locations } from './Pages/Locations';
 import { MadeWith } from './Pages/MadeWith';
 import { Loading } from './Components/Loading/Loading';
-import { CharacterDetail } from './Pages/CharacterDetail';
 
 function App() {
 
@@ -20,7 +19,6 @@ function App() {
         <Route path='/locations' element={<Locations />} />
         <Route path='/madewith' element={<MadeWith />} />
         <Route path='/loading' element={<Loading />} />
-        <Route path='/characters/:id' element={<CharacterDetail />} />
       </Routes>
 
     </div>
