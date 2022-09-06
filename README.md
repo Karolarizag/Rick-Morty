@@ -37,7 +37,7 @@ Enjoy coding!
 
 ## Deploy
 
-This App has been deployed on [Netlify](https://www.netlify.com/) and you can find it at: https://rickandmortyapp-bykarolariza.netlify.app/
+This App has been deployed on [Netlify](https://www.netlify.com/) and you can find it at: [rick-and-morty-karolariza.netlify.app](https://rick-and-morty-karolariza.netlify.app/)
 
 ## Contact
 
