@@ -1,46 +1,46 @@
-# Getting Started with Create React App
+![Rick&Morty ICON](https://lh3.googleusercontent.com/wgNJODzveMgXwf4NGYVTjLaKX8KoTu9TfBpiS-Zf3GD36YtLNto08E6Vx9Vj4B6l-7g11mR7khHRaEKHBkG9ZDCegJbyua6xipUZFGrcwZyO9ktPIEMff-0aPTcxMU9jRc3_ZhQa6ci8VeBVAFLRTuXFroIQ6xZaeswM0MXpUSDFsHYwhajbYwEI5FIXcxUHR13IlajYEMnQ98bCG0JxTBZSm3gGjqpHa9tJ-Kws1G9_tHRpA4nTs0bpb4tLuTjnKxRGe3f3Te3RjEni32EHYzS0J5a86ub4500e8dVp9uh4rgri0MvFP8s7sbBnjPHuYUMVgttJrlzIuDb-MiCVVo10nCqml4P8OL-jH0fdjMSHeq07RpqR-_Te6rem_yuBVxzmIWytg78EVdN874odt7u88P_bq0Jg0zgDYVsFa8sacNDq4vqhP93v4klSelwphIAXDBo_p3Ph9hbS2-Cxlw-aUb6BCCfh4eEAX0zMrgzL3Uj6nJlQMtqZfBI_U86RE4NgKThUA9osHRipTcYNMHQUn4Jj8gGZVLtouDigx9x_Tgn39mJerl6kHi36pqocz7R-AH9Q0eqjdg4CDp0IxbdwYrx15AX7RtEVF4WsT-aqjaVEdtlUjWRswC5Ha_uvJMMyUrCKp_2K8M7RY7HPSFltzA0tMERkntpVsuBzT7GCpyW19642XoC01tDCEzrSCc2YW5wNJ5ZM2TMFNX3LCrk884Kcc1sAo8mv0d4UhpDu0t06prknV2-MFNyi0t2WnNDV9NXf2gnWRfAECGCuFT62kN3TIHFP-e7pFqKiX3P76PSw9mTHLPDeQWN4C3oDKOZ3VAqbmUUVmu6ifwvLFwa5kcWhxLpQ4Kmx8Hq2MGhI7Za32Sb9FpXZB5FCoj7YRF_TgHv_Dxlcfg=w1440-h440-no?authuser=0)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
 
-## Available Scripts
+First of all you have to clone this repo on your machine.
 
-In the project directory, you can run:
+```bash
+git clone [ssh repo]
+```
 
-### `npm start`
+Use the package manager NPM to install the dependencies.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+npm install
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Run the app.
 
-### `npm test`
+```bash
+npm run start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Enjoy coding! 
 
-### `npm run build`
+## Techonologies used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [TypeScript](https://www.typescriptlang.org/): As principal language.
+- [ReactTS](https://reactjs.org/): As TS framework. 
+- [Apollo server](https://www.apollographql.com/docs/apollo-server/): To connet the app to the [Rick&Morty API](https://rickandmortyapi.com/). 
+- [DaisyUI](https://daisyui.com/):  [Tailwind](https://tailwindcss.com/) CSS components library. 
+- [React route 6](https://reactrouter.com/en/v6.3.0/getting-started/overview): To nested routes.
+- [NPM](https://www.npmjs.com/): Package management system.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Git branches
+- **Main:** Final version. 
+- **Develop:** Development branch.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Deploy
 
-### `npm run eject`
+This App has been deployed on [Netlify](https://www.netlify.com/) and you can find it at: https://rickandmortyapp-bykarolariza.netlify.app/
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Contact
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Any feedback about the design or coding is welcome, you can reach me out on [LinkedIn](https://www.linkedin.com/in/karolarizag/) or [mail me](mailto:karolarizadev@gmail.com).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Thanks. 
