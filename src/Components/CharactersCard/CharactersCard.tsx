@@ -1,4 +1,5 @@
 import { Character } from "../../types"
+import './CharactersCard.css'
 
 export const Card = ({props}:any) => {
 
@@ -19,19 +20,22 @@ export const Card = ({props}:any) => {
   }
 
   return (
-      <div className="card charactersCard bg-base-100 shadow-xl my-2">
 
-        <figure><img src={props.image} alt={props.name} /></figure>
+    <div className="flip-card card drop-shadow-xl">
 
-        <div className="card-body">
-          <h2 className="card-title">{props.name}</h2>
-          <p>
-          {
-            status(props) 
-          }  -  {props.species}
+      <div className="flip-card-inner">
+        <div className="flip-card-front">
+          <img src={props.image} alt="Avatar" />
+        </div>
+        <div className="flip-card-back p-3">
+          <h2 className="mb-5"><b> {props.name}</b></h2>
+          <p className="mb-3">
+            {
+              status(props) 
+            }  -  {props.species}
           </p>
 
-          <p>
+          <p className="mb-3">
             {
               props.gender === 'Male'
               ? <div className="badge badge-secondary">{props.gender}</div>
@@ -39,15 +43,14 @@ export const Card = ({props}:any) => {
             } {  -  props.type ? props.type : null}
           </p>
 
-          <p>Last known location: <br /> {props.location.name} </p>
+          <p className="mb-3">Last known location: <br /> {props.location.name} </p>
 
-          <p>First seen in: <br /> {props.origin.name} </p>
+          <p className="mb-3">First seen in: <br /> {props.origin.name} </p>
 
-          <div className=" badge badge-warning">Episodes: {props.episode.length + 1}</div>
-
+          <div className=" badge badge-warning">Episodes: {props.episode.length + 1}</div> 
         </div>
-
       </div>
+    </div>
   )
 
 }
