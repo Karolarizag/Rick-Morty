@@ -1,4 +1,4 @@
-![Rick&Morty ICON](https://drive.google.com/file/d/1VOAB1xFbuwHIDuLjdIoj023oAe0x2sSI/view?usp=sharing)
+![Rick&Morty ICON]([https://drive.google.com/file/d/1VOAB1xFbuwHIDuLjdIoj023oAe0x2sSI/view?usp=sharing](https://www.pngmart.com/files/3/Rick-And-Morty-PNG-Pic.png))
 
 ## Installation
 
