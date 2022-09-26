@@ -51,7 +51,7 @@ export const MadeWith = () => {
       <Navbar />
       <Title props='Made with'/>
       
-      <div className="flex flex-wrap p-5 justify-center ">
+      <div className="flex flex-wrap justify-center">
         {
 
           technologies.map((technology:Techonlogy) => {
@@ -76,19 +76,19 @@ export const MadeWith = () => {
       </div>
 
       <Title props='Contact me'/>
-        <div className="flex flex-wrap p-5 justify-center mb-10">
-        {
+      <div className="flex flex-wrap p-5 pb-10 justify-center">
+      {
 
-          contact.map((item:Techonlogy) => {
-            return (
-              <div className="w-10 mx-2" key={item.id}>
-                <a href={item.link} rel="noreferrer" target="_blank">
-                    <img src={item.image} alt={item.name} />
-                </a>
-              </div>
-            )
-          })
-        }
+        contact.map((item:Techonlogy) => {
+          return (
+            <div className="w-10 mx-2" key={item.id}>
+              <a href={item.link} rel="noreferrer" target="_blank">
+                  <img src={item.image} alt={item.name} />
+              </a>
+            </div>
+          )
+        })
+      }
       </div>
 
     </div>

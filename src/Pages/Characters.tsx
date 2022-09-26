@@ -21,7 +21,7 @@ export const Characters = () => {
         isLoading
         ? <Loading />
         : 
-        <div className="flex flex-wrap justify-around p-5">
+        <div className="flex flex-wrap justify-around">
           {
             characters?.map((item:Character) => {
               return (
