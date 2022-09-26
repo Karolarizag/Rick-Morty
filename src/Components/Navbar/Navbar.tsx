@@ -6,7 +6,7 @@ export const Navbar = () => {
     <div className="navbar sticky -top-1 glass z-10">
       <div className="flex-1">
         <Link to="/">
-          <div className="btn btn-ghost normal-case text-xl">Rick & Morty</div>
+          <div className="btn btn-ghost normal-case text-xl">R&M</div>
         </Link>
       </div>
       <div className="flex-none">
@@ -18,7 +18,7 @@ export const Navbar = () => {
             <Link to="/locations">Locations</Link>
           </li>
           <li>
-            <Link to="/madewith">Made with</Link>
+            <Link to="/madewith">Techs</Link>
           </li>
         </ul>
       </div>
