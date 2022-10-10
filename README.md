@@ -24,8 +24,8 @@ Enjoy coding!
 
 ## Techonologies used
 
-- [TypeScript](https://www.typescriptlang.org/): As principal language.
-- [React](https://reactjs.org/): As framework. 
+- [TypeScript](https://www.typescriptlang.org/): As language.
+- [React](https://reactjs.org/): As front-end framework. 
 - [Apollo server](https://www.apollographql.com/docs/apollo-server/): To connet the app to the [Rick&Morty API](https://rickandmortyapi.com/). 
 - [DaisyUI](https://daisyui.com/):  [Tailwind](https://tailwindcss.com/) CSS components library. 
 - [React route 6](https://reactrouter.com/en/v6.3.0/getting-started/overview): To nested routes.
