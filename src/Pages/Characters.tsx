@@ -24,11 +24,7 @@ export const Characters = () => {
         <div className="flex flex-wrap justify-around">
           {
             characters?.map((item:Character) => {
-              return (
-                <div key={item.id}>
-                  <Card props={item} />
-                </div>
-              )
+              return <Card props={item} key={item.id} />
             })
           }
         </div>
